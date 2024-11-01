@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,43 @@
     <link rel="stylesheet" href="./Assets/CSS/Style.css">
 </head>
 <body>
+    <main>
+        <header>
+            <div id="Tempo">
+                <h1 class="Titulos">Tempo: </h1>
+                <p class="Numeros" id="Minutos">0</p>
+            </div>
+            <div id="Pontuação">
+                <h2 class="Titulos">Score: </h2>
+                <p class="Numeros" id="Pontos">0</p>
+            </div>
+            <div id="Time">
+                <h3 class="Titulos">Vidas: </h3>
+                <p id="Life" class="Numeros">X3</p>
+            </div>
+        </header>
+        <section>
+            <div id="Campo">
+                <div class="Vidraça">
+                    <div class="janela Inimigo" id="Painel1" onclick="MarcadorPontos()"></div>
+                    <div class="janela" id="Painel2" onclick="MarcadorPontos()"></div>
+                    <div class="janela" id="Painel3" onclick="MarcadorPontos()"></div>
+                </div>
+
+                <div class="Vidraça">
+                    <div class="janela" id="Painel4" onclick="MarcadorPontos()"></div>
+                    <div class="janela" id="Painel5" onclick="MarcadorPontos()"></div>
+                    <div class="janela" id="Painel6" onclick="MarcadorPontos()"></div>
+                </div>
+
+                <div class="Vidraça">
+                    <div class="janela" id="Painel7" onclick="MarcadorPontos()"></div>
+                    <div class="janela" id="Painel8" onclick="MarcadorPontos()"></div>
+                    <div class="janela" id="Painel9" onclick="MarcadorPontos()"></div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script defer src="./Assets/Scripts/Motor.js"></script>
 </body>
 </html>
