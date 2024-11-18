@@ -8,7 +8,7 @@ const state = {
     },
     valores:{
         tempo: null,
-        Tempo: 5,
+        Tempo: 60,
         Velocidade: 1000,
         Tempo1: setInterval(Tempo, 1000),
         Posição: 0,
