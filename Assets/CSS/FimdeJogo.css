@@ -1,34 +1,79 @@
 @charset "UTF-8";
 
+*{
+    color:rgb(255, 255, 92);
+}
+
 body{
     height: 100vh;
     background-color: black;
+}
+
+.Fim{
+    height: 100vh;
+    width: 100vw;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+}
+
+.Info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
 }
 
 .Titulo{
     margin: 10px;
-    padding: 10px;
-    color: rgb(255, 255, 92);
+    padding: 5px;
+
+    font-size: 30pt;
+    color: rgb(255, 74, 74);
+}
+
+p{
+    font-size: 15pt;
 }
 
 button{
     background-color: transparent;
+    margin: 10px;
     border: 0px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 button:hover{
-    color: rgb(255, 70, 70);
+    transition: 1s;
+    color: rgb(70, 76, 255);
     cursor: pointer;
 }
 
-.Fim{
+/*Tabela de pontuação*/
+
+#Tabelas{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+
+    border: 1px solid rgb(255, 255, 92);
+}
+
+.Info{
+    margin: 10px;
+    padding: 10px;
+}
+
+.Vida{
+    font-variant-numeric: tabular-nums;
+}
+
+.Vidas{
+    list-style: none;
+}
+
+.Vidas > li{
+    margin: 10px;
 }

@@ -1,19 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game Over</title>
     <link rel="stylesheet" href="./Assets/CSS/Reset.css">
     <link rel="stylesheet" href="./Assets/CSS/FimdeJogo.css">
+    <link rel="shortcut icon" href="./Assets/Imagens/Icone.png" type="image/x-icon">
 </head>
 <body>
-    <div class="Fim">
-        <audio src="./Assets/Audios/GameOver.mp3" autoplay></audio>
-        <h1 class="Titulo">GAME OVER!</h1>
-        <!--<h2 class="Titulo">SEU RESULTADO FOI:<strong id="Pinal" class="Titulo"></strong></h2>-->
-        <a href="index.html"><button class="Titulo">RECOMEÇAR</button></a>
-    </div>
-    <script src="./Assets/Scripts/Motor.js"></script>
+    <section class="Fim">
+        <div class="Info">
+            <audio src="./Assets/Audios/GameOver.mp3" autoplay></audio>
+            <h1 class="Titulo">GAME OVER!</h1>
+            <p>JOGAR NOVAMENTE?</p>
+            <div class="YesOrNot">
+                <a href="index.html"><button>SIM</button></a>
+                <a href="https://www.youtube.com/watch?v=Yv3iDmmfDs0"><button>NAO</button></a>
+            </div>
+        </div>
+        <div id="Tabelas" class="Info">
+            <ol class="Vidas">
+                <li class="Score">YOUR SCORE</li>
+                <li id="PrimeiraVida" class="Vida"></li>
+                <li id="SegundaVida" class="Vida"> </li>
+                <li id="TerceiraVida" class="Vida"></li>
+            </ol>
+        </div>
+    </section>
+    <script src="./Assets/Scripts/Final.js"></script>
 </body>
 </html>
