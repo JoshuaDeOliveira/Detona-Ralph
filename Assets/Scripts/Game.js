@@ -70,6 +70,7 @@ function movimento(){
 
 function PlayAudio(Som){
     let audio = new Audio(`./Assets/Audios/${Som}.mp3`)
+    audio.volume = 0.3;
     audio.play();
 }
 
