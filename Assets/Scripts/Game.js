@@ -36,7 +36,7 @@ function Tempo(){
                 break;
         }
 
-        state.valores.Tempo = 5
+        state.valores.Tempo = 60
         state.valores.ContVida--
         state.visual.Vidas.textContent = state.valores.ContVida
         state.valores.resultado = 0
